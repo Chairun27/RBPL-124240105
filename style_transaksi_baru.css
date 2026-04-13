@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0; 
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+/* FRAME HP */
+.mobile {
+    width: 390px;          /* ukuran HP */
+    min-height: 100vh;
+    background: #eafff9;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.header {
+    position: relative;
+    padding: 16px;
+    background: #ffffff;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.header h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.back {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+.search-box {
+    padding: 16px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 30px;
+    border: 1px solid #bbb;
+    font-size: 14px;
+}
+
+.content {
+    flex: 1;              
+    padding: 12px;
+    overflow-y: auto;
+}
+
+.product-container {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.produk-card {
+    background: white;
+    border-radius: 16px;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.produk-card img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+}
+
+.produk-card p {
+    margin: 8px 0 4px;
+    font-size: 14px;
+}
+
+.produk-card strong {
+    font-size: 14px;
+}
+
+.qty {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.qty button {
+    width: 26px;
+    height: 26px;
+    border-radius: 6px;
+    border: none;
+    background: #5fb5a2;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    pointer-events: auto;
+    z-index: 5;
+}
+
+.qty span {
+    min-width: 18px;
+    text-align: center;
+}
+
+/* Navbar */
+.bottom-nav {
+    height: 60px;
+    background: #5DB7A4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 22px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+} 
+
+.bottom-nav a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+} 
+
+.bottom-nav a:hover{
+    transform: scale(1.2);
+}
+
+/* TOTAL BAYAR */
+.total-box {
+    position: sticky;
+    bottom: 80px;                 
+    width: calc(100% - 24px);     
+    margin: 0 auto 12px auto;     
+    padding: 14px 16px;
+    background: #03923f;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    z-index: 20;
+}
+
+.total-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#totalUnit {
+    font-size: 14px;
+}
+
+#totalHarga {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-simpan {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 14px;
+    background: white;
+    color: #03923f;
+    font-weight: bold;
+    cursor: pointer;
+} 
+
+.produk-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}

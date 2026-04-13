@@ -1,0 +1,303 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    margin: 0; 
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+.mobile-wrapper{
+    width: 390px;          
+    min-height: 100vh;
+    background: #eafff9;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.header{
+    background:#5DB7A4;
+    padding:20px;
+    color: white; 
+    display: flex;
+    position: relative;
+    justify-content: space-between; 
+    text-align: center;
+}
+
+.header1{
+    background:#5DB7A4;
+    padding:20px;
+    color: white; 
+    position: relative;
+    justify-content: space-between; 
+    text-align: center;
+}
+
+.header h3{
+    font-size:18px;
+    font-weight:600;
+}
+
+.back{
+    position:absolute;
+    left:15px;
+    top:50%;
+    transform:translateY(-50%);
+    text-decoration:none;
+    font-size:20px;
+    color: white;
+} 
+
+.back:hover{
+    transform:translateY(-50%) scale(1.2);
+}
+
+.halo{
+    font-size:18px;
+}
+
+.supplier{
+    font-weight:bold;
+}
+
+.logout{
+    text-decoration:none;
+    color:#555;
+    font-size:14px;
+}
+
+.menu{
+    padding:0 20px 80px 20px; 
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    padding:20px;
+    margin-bottom:20px;
+    border:1px solid #eee;
+    transition:0.3s;
+    text-align:center;
+    box-shadow:0 3px 8px rgba(0,0,0,0.05);
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
+}
+
+.card-icon{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.card h3{
+    margin:10px 0;
+    color:#333;
+}
+
+.card p{
+    font-size:14px;
+    color:#666;
+}
+
+.card a{
+    display:inline-block;
+    margin-top:12px;
+    padding:10px 18px;
+    background:#4e73df;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    font-size:14px;
+    transition:0.2s;
+}
+
+.card a:hover{
+    background:#2e59d9;
+}
+
+.bottom-nav{
+    position: fixed;
+    bottom: 0;
+    width: 390px; 
+    height: 60px;
+    background: #5DB7A4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 22px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.bottom-nav a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.bottom-nav a:hover{
+    transform: scale(1.2);
+} 
+
+.table-card{
+    background:white;
+    padding:20px;
+    border-radius:16px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    margin-top:20px;
+    min-width:520px;
+}
+
+.restock-table{
+    width:100%;
+    min-width:450px;
+    border-collapse:collapse;
+    font-size:14px;
+}
+
+.restock-table th{
+    background:#5fae9f;
+    color:white;
+    padding:12px;
+    font-size:13px; 
+    text-align:center;
+    font-weight:600;
+}
+
+.restock-table td{
+    padding:12px;
+    font-size:13px; 
+    text-align:center;
+    border-bottom:1px solid #eee;
+}
+
+.restock-table tbody tr:hover{
+    background:#f6f8f8;
+}
+
+.table-scroll{
+    width:100%;
+    overflow-x:auto;
+}
+
+.badge{
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:500;
+    color:white;
+}
+
+.badge-menunggu{
+    background:#f39c12;
+}
+
+.badge-diproses{
+    background:#3498db;
+}
+
+.badge-dikirim{
+    background:#27ae60;
+}
+
+.btn-proses{
+    background:#f39c12;
+    color:white;
+    padding:6px 12px;
+    border-radius:6px;
+    text-decoration:none;
+    font-size:12px;
+}
+
+.btn-kirim{
+    background:#27ae60;
+    color:white;
+    padding:6px 12px;
+    border-radius:6px;
+    text-decoration:none;
+    font-size:12px;
+}
+
+.header a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+} 
+
+.pending{
+    background:#ffeaa7;
+    color:#b7791f;
+}
+
+.approved{
+    background:#c8f7c5;
+    color:#1e7e34;
+}
+
+.rejected{
+    background:#ffcdd2;
+    color:#c62828;
+}
+
+/* Badge jenis pengiriman */
+.badge-restock{
+    background:#3498db;
+    color:white;
+    padding:5px 12px;
+    font-size:11px;
+    border-radius:20px;
+    display:inline-block;
+    margin-bottom:8px;
+}
+
+.badge-retur{
+    background:#e67e22;
+    color:white;
+    padding:5px 12px;
+    font-size:11px;
+    border-radius:20px;
+    display:inline-block;
+    margin-bottom:8px;
+}
+
+/* Status pengiriman */
+.status-proses{
+    color:#2980b9;
+    font-weight:600;
+    margin-top:5px;
+}
+
+.status-setuju{
+    color:#27ae60;
+    font-weight:600;
+    margin-top:5px;
+}
+
+/* Button kirim barang */
+.btn-kirim{
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 14px;
+    background:#27ae60;
+    color:white;
+    border-radius:8px;
+    text-decoration:none;
+    font-size:13px;
+    transition:0.2s;
+}
+
+.btn-kirim:hover{
+    background:#219150;
+}

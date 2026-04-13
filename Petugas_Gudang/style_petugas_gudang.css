@@ -1,0 +1,202 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: ccc;
+}
+
+/* Container mobile */
+.mobile-wrapper{
+    max-width:420px;
+    margin:auto;
+    background:white;
+    min-height:100vh;
+    position:relative;
+    padding-bottom:80px;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,0.2);
+}
+
+/* Header dashboard */
+.header{
+    background: linear-gradient(135deg,#5DB7A4,#4aa391);
+    padding:20px;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.halo{
+    font-size:14px;
+    opacity:0.9;
+}
+
+.petugas_gudang{
+    font-size:18px;
+    font-weight:bold;
+}
+
+.logout{
+    background:white;
+    color:#5DB7A4;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:13px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Header halaman */
+.header1{
+    display:flex;
+    align-items:center;
+    padding:15px;
+    background: linear-gradient(135deg,#5DB7A4,#4aa391);
+    color:white;
+}
+
+.header1 h3{
+    flex:1;
+    text-align:center;
+}
+
+.back{
+    text-decoration:none;
+    color:white;
+    font-size:20px;
+}
+
+/* Menu dashboard */
+.menu{
+    padding:20px;
+}
+
+.menu-card{
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    color:black;
+    background:white;
+    padding:30px 20px;
+    margin-bottom:20px;
+    border-radius:16px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:all 0.25s ease;
+}
+
+.menu-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 25px rgba(0,0,0,0.12);
+}
+
+.menu-card h4{
+    margin-top:10px;
+    font-size:18px;
+}
+
+.menu-card p{
+    font-size:13px;
+    color:#777;
+}
+
+/* Card barang */
+.card{
+    background:white;
+    padding:18px;
+    margin-bottom:18px;
+    border-radius:14px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+    transition:0.2s;
+}
+
+.card:hover{
+    transform:scale(1.02);
+}
+
+.card p{
+    margin:6px 0;
+    font-size:14px;
+}
+
+/* Button proses */
+.btn-proses{
+    display:inline-block;
+    margin-top:12px;
+    padding:9px 16px;
+    background:#f0ad4e;
+    color:white;
+    text-decoration:none;
+    border-radius:20px;
+    font-size:13px;
+    transition:0.2s;
+}
+
+.btn-proses:hover{
+    background:#ec971f;
+}
+
+/* Button simpan */
+.btn-kirim{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:linear-gradient(135deg,#5DB7A4,#4aa391);
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:bold;
+    transition:0.2s;
+}
+
+.btn-kirim:hover{
+    transform:scale(1.03);
+}
+
+/* Form */
+select,
+textarea{
+    width:100%;
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #ddd;
+    margin-top:5px;
+    font-size:14px;
+}
+
+textarea{
+    min-height:80px;
+    resize:none;
+}
+
+/* Navbar bawah */
+.bottom-nav{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    max-width:420px;
+    height:65px;
+    background:white;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    border-top:1px solid #eee;
+    box-shadow:0 -3px 10px rgba(0,0,0,0.1);
+}
+
+.bottom-nav a{
+    color:#5DB7A4;
+    font-size:22px;
+    text-decoration:none;
+    transition:0.2s;
+}
+
+.bottom-nav a:hover{
+    transform:scale(1.2);
+}

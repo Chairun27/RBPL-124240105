@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+/* FRAME HP */
+.mobile {
+    width: 390px;
+    min-height: 100vh;
+    background: #eafff9;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+.header {
+    background: white;
+    padding: 16px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.header h3 {
+    font-size: 18px;
+}
+
+.back {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+/* FILTER */
+.filter {
+    display: flex;
+    gap: 10px;
+    padding: 16px;
+}
+
+.filter input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+}
+
+.btn-cari {
+    padding: 10px 16px;
+    border: none;
+    background: #5DB7A4;
+    color: white;
+    border-radius: 8px;
+}
+
+/* SUMMARY */
+.summary {
+    margin: 0 16px;
+    background: white;
+    border-radius: 14px;
+    padding: 14px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.summary .item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.summary .total {
+    border-top: 1px dashed #ccc;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+/* CONTENT */
+.content {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+}
+
+.section-title {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* TRANSAKSI CARD */
+.trx-card {
+    background: white;
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+/* FOOTER */
+.footer {
+    padding: 16px;
+    background: white;
+    border-top: 1px solid #ddd;
+}
+
+.btn-print {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background: #27ae60;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+}

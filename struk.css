@@ -1,0 +1,117 @@
+body {
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+.struk-container {
+    width: 390px;
+    padding: 20px 0;
+}
+
+.struk {
+    background: #fff;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.alamat {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}
+
+.info {
+    font-size: 13px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+th {
+    text-align: left;
+    border-bottom: 1px dashed #aaa;
+    padding-bottom: 4px;
+}
+
+td {
+    padding: 6px 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.summary h3 {
+    margin: 0;
+    color: #2ecc71;
+}
+
+.thanks {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+} 
+
+.aksi {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.btn-print {
+    background: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+} 
+
+.notif {
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+    background: #27ae60;
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+@media print {
+    .btn-print,
+    .notif {
+        display: none;
+    }
+
+    body {
+        background: white;
+    }
+
+    .struk-container {
+        box-shadow: none;
+    }
+}

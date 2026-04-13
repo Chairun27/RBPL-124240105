@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    background: #ddd;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.mobile-wrapper {
+    width: 390px;
+    min-height: 100vh;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-header {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.login-header h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.logo {
+    width: 120px;
+}
+
+.login-card {
+    width: 100%;
+    background: #70E1D0;
+    border-radius: 70px 70px 0 0; 
+    padding: 32px 24px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    flex-grow: 1; 
+}
+
+.login-card label {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.login-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.login-card input,
+.login-card select {
+    height: 48px;
+    border-radius: 24px;
+    border: none;
+    padding: 0 18px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.login-card button {
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background: #2C3E50;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}

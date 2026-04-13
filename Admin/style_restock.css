@@ -1,0 +1,159 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    margin: 0; 
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+.mobile-wrapper{
+    width: 390px;          
+    min-height: 100vh;
+    background: #eafff9;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.header{
+    background:#5DB7A4;
+    padding:20px;
+    color: black;
+    text-align:center;
+    position:relative;
+}
+
+.header h3{
+    font-size:18px;
+    font-weight:600;
+}
+
+.back{
+    position:absolute;
+    left:15px;
+    top:50%;
+    transform:translateY(-50%);
+    text-decoration:none;
+    font-size:20px;
+    color:black;
+}
+
+.form-container{
+    padding:20px;
+}
+
+.form-container label{
+    font-size:13px;
+    margin-top:10px;
+    display:block;
+}
+
+.form-container input,
+.form-container textarea{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+.form-container textarea{
+    height:80px;
+}
+
+.form-container button{
+    margin-top:15px;
+    width:100%;
+    background:#5DB7A4;
+    color:white;
+    border:none;
+    padding:10px;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+.restock-container{
+    padding:18px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.restock-card{
+    background:white;
+    padding:12px;
+    border-radius:12px;
+    box-shadow:0 3px 8px rgba(0,0,0,0.1);
+}
+
+.restock-card h4{
+    margin-bottom:6px;
+}
+
+.status{
+    display:inline-block;
+    margin-top:6px;
+    padding:4px 10px;
+    border-radius:8px;
+    font-size:12px;
+}
+
+.status.menunggu{
+    background:#fff3cd;
+    color:#856404;
+}
+
+.status.diproses{
+    background:#cce5ff;
+    color:#004085;
+}
+
+.status.dikirim{
+    background:#d4edda;
+    color:#B47EDE;
+}
+
+.status.dicek{
+    background:#FF7F00;
+    color: white;
+} 
+
+.status.selesai{
+    background:#2E8B57;
+    color: white;
+}
+
+.status.ditolak{
+    background:#F04A5E;
+    color: white;
+}
+
+.bottom-nav{
+    position: fixed;
+    bottom: 0;
+    width: 390px; 
+    height: 60px;
+    background: #5DB7A4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 22px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.bottom-nav a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.bottom-nav a:hover{
+    transform: scale(1.2);
+} 

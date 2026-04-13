@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    background: #ccc;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.mobile-wrapper {
+    width: 390px;
+    min-height: 100vh;
+    background: #EFFFFB;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-header {
+    background: #5DB7A4;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-text small {
+    font-size: 14px;
+}
+
+.header-text strong {
+    font-size: 18px;
+}
+
+.logout {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dashboard-content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.btn-transaksi {
+    width: 100%;
+    height: 45px;
+    background: #7FB8AD;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.info-card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-left: 4px solid #333;
+}
+
+.info-card p {
+    margin: 0;
+    font-size: 14px;
+    color: #888;
+}
+
+.info-card h2 {
+    margin-top: 10px;
+    font-size: 26px;
+} 
+
+.bottom-nav{
+    position: fixed;
+    bottom: 0;
+    width: 390px; 
+    height: 60px;
+    background: #5DB7A4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 22px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.bottom-nav a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.bottom-nav a:hover{
+    transform: scale(1.2);
+}
