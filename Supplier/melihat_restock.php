@@ -46,7 +46,7 @@ $data = mysqli_query($conn,$query);
             <?php while($row = mysqli_fetch_assoc($data)) { ?>
 
             <?php 
-                $status = strtolower(trim($row['status']));
+                $status = strtolower(trim($row['status'] ?? 'menunggu')); 
             ?>
 
                 <tr>
