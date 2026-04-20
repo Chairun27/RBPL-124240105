@@ -6,19 +6,6 @@ if (!isset($_SESSION['login']) || $_SESSION['role'] != 'Admin') {
     header("Location: ../index.php");
 }
 
-// Menghitung stok menipis 
-// $notif = mysqli_query($conn,"
-// SELECT COUNT(*) as total 
-// FROM produk 
-// WHERE stok <= stok_minimum
-// ");
-
-// $data_notif = mysqli_fetch_assoc($notif);
-// $total_notif = $data_notif['total'];
-
-// Mengambil data produk 
-// $query = mysqli_query($conn,"SELECT * FROM produk");
-
 $notif = mysqli_query($conn,"
 SELECT COUNT(*) as total 
 FROM produk 
