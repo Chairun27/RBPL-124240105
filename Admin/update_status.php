@@ -33,19 +33,6 @@ if(!$update){
     die("Gagal update status: " . mysqli_error($conn));
 }
 
-// update stok (mengurangi jumlah stok barang di database)
-// if($status == 'disetujui'){
-//     $updateStok = mysqli_query($conn, "
-//         UPDATE produk 
-//         SET stok = stok - {$data['jumlah']}
-//         WHERE id = '{$data['id_barang']}'
-//     ");
-
-//     if(!$updateStok){
-//         die("Gagal update stok: " . mysqli_error($conn));
-//     }
-// }
-
 // update status saja (tanpa mengubah/mengurangi jumlah stok barang di database)
 $update = mysqli_query($conn, "
     UPDATE retur_barang 
